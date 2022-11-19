@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DR prediction</title>
+  <link rel="shortcut icon" href="{{url_for('static', filename='images/fevicon.png' )}}" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css' )}}" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous">
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <!--Navigation Bar-->
+    <div class="nav">
+      <div class="logo">
+        <a href="/">
+          <img src="static\images\logo.png" style="width:100px" />
+        </a>
+      </div>
+      <div class="links">
+        <a href="/home" class="mainLink">Home</a>
+        <a href="/info">Info</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/upload" class="btn1">Predict</a>
+      </div>
+    </div>
+    <!--Landing Page-->
+    <div class="landing">
+      <div class="landingText" data-aos="fade-up" data-aous-duration="1000">
+        <h1>
+          <br>
+          <br><br>
+          <br>Early Detection of Diabetic Retinopathy
+          <span style="color: #1b1570; font-size: 4vw">Prediction</span>
+        </h1>
+        <h3>
+          Diabetes is a widely recognized disease, with its most common subsequent health risks
+          well known to the public. However, diabetic retinopathy, an eye disease diabetics are 
+          vulnerable to, is not as well-recognized as other diabetic complications, often leading 
+           to many cases of preventable blindness.  Nearly all patients with type 1 diabetes and >60%
+           of patients with type 2 diabetes have some form of retinopathy. The disease has four main 
+           stages that are more easily treatable when detected early on, especially through preventative 
+            measures. 
+        </h3>
+
+        <div class="btn2"><a href="/info">Read more</a>
+        </div>
+      </div>
+      <div class="landingImage" data-aos="fade-down" data-aous-duration="2000">
+        <img src="static/images/banner_img.jpg" alt="bannerImg" style="width: 500px; height:360px" />
+      </div>
+    </div>
+
+    <!--Service Section-->
+    <div class="about">
+      <div class="aboutText" data-aos="fade-up" data-aous-duration="1000">
+        <h1 style="margin: 20px;">
+          <br><br>Our Patients Are at Centre
+          <span style="color: #2f8be0; font-size: 3vw"> can get</span>
+        </h1>
+        <div class="image-container">
+          <img src="/static/images/connsultPationt.png" alt="consultPationt"
+            style="width:400px; margin:100px 0px 0px 90px;"></img>
+        </div>
+      </div>
+      <div class="aboutList" data-aos="fade-left" data-aous-duration="1000">
+        <ol>
+          <li>
+            <span>01</span>
+            <p>High accurate result.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <p>No need to go hospital.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <p>Quick Diagnosis</p>
+          </li>
+          <li>
+            <span>04</span>
+            <p>24/7 Support.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footerlinks">
+        <a href="/home" class="mainLink">Home</a>
+        <a href="/info">Particulars</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

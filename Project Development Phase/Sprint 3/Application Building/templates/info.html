@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DR Prediction</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/fevicon.png' )}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css' )}}" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous">
+    </script>
+    <style>
+        .banner {
+            margin: 60px;
+            width: auto;
+            height: 300px;
+            /* Setup */
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(255, 255, 255, 0.15) 2.4px 2.4px 3.2px;
+            display: flex;
+            flex-direction: row;
+            padding: 50px;
+        }
+
+        .bannerText h1 {
+            font-size: 3vw;
+            color: #5100ff;
+            font-weight: 600;
+        }
+
+        .bannerText p {
+            text-indent: 50px;
+            color: #777777;
+            font-size: 1.2vw;
+            font-weight: normal
+        }
+
+        .bannerText img {
+            width: 10vw;
+            margin-right: 20px;
+        }
+
+        .bannerImg img {
+            margin-left: 90px;
+            width: 350px;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Navigation Bar-->
+        <div class="nav">
+            <div class="logo">
+                <a href="/"><img src="static/images/logo.png" alt="Website Title" style="width:100px" /></a>
+            </div>
+            <div class="links">
+                <a href="/home">Home</a>
+                <a href="/info" class="mainLink">Info</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/upload" class="btn1">Predict</a>
+            </div>
+        </div>
+        <!--Landing Page-->
+        <div class="landing">
+            <div class="landingText" data-aos="fade-up" data-aous-duration="1000">
+                <h1>
+                    <br><br>Early Detection of Diabetic Retinopathy
+                    <span style="color: #1b1570; font-size: 4vw">Prediction</span>
+                </h1>
+                <h3>
+                    Diabetes is a widely recognized disease, with its most common subsequent health risks
+                     well known to the public. However, diabetic retinopathy, an eye disease diabetics are 
+                     vulnerable to, is not as well-recognized as other diabetic complications, often leading 
+                     to many cases of preventable blindness.  Nearly all patients with type 1 diabetes and >60%
+                     of patients with type 2 diabetes have some form of retinopathy. The disease has four main 
+                     stages that are more easily treatable when detected early on, especially through preventative 
+                     measures. 
+                </h3>
+            </div>
+            <div class="landingImage" data-aos="fade-down" data-aous-duration="2000">
+                <img src="static/images/banner_img.jpg" alt="bannerImg" style="width: 500px; height:360px" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    STAGE 1: MILD NPDR
+                </h1>
+                <p>A These patients should have a dilated eye examination every 12 months.
+                    There is a 5% risk that mild NPDR will progress to PDR within 1 year.
+                    If one or more MAs are present in the eye of a patient not yet diagnosed with
+                     diabetes, he or she should be considered a diabetes suspect and should see his 
+                     or her PCP for further testing</p>
+                <p> It is important to discuss findings with patients, especially those who were 
+                    recently diagnosed with diabetes, to ensure that they understand that MAs indicate 
+                    early end organ damage from their disease and that they are educated on its possible
+                     ramifications.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="https://core4-cms.imgix.net/1559832450-0619_CF1_Fig1.png" alt="" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    STAGE 2: MODERATE NPDR
+                </h1>
+                <p>These patients have hemorrhages or MAs in one to three retinal 
+                    quadrants and/or cotton wool spots, hard exudates, or venous beading</p>
+                <p>Patients with moderate NPDR should be seen every 6 to 8 months, There is a 12% to 
+                    27% risk that they will develop proliferative diabetic retinopathy (PDR) 
+                    within 1 year.2 The use of fundus photography is suggested for these patients, 
+                    and you may obtain macular OCT images at your discretion if you suspect DME. 
+                    These patients do not need to be referred to a retina specialist unless you have 
+                    confirmed DME or you believe OCT imaging is warranted but do not have access to 
+                    this technology.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="https://core4-cms.imgix.net/1559832525-0619_CF1_Fig2.png" alt="" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    STAGE 3: SEVERE NPDR
+                </h1>
+                <p>These patients have intraretinal hemorrhages (> 20 in each quadrant), 
+                    venous beading in two or more quadrants, or an IRMA in one or more quadrants 
+                    . This is known as the 4:2:1 rule. These findings must be in the absence of 
+                    neovascularization, which would indicate PDR.</p>
+                <p>Patients with severe NPDR should be monitored using both macular OCT and 
+                    fluorescein angiography to detect any DME or early neovascularization.
+                     Referral to a retina specialist is recommended, and patients should be monitored
+                      every 3 to 4 months with dilated fundus examination.</p>
+                <p>Patients with severe NPDR have a 52% risk of developing PDR within 1 year, 
+                    so it is important to discuss with them the importance of blood sugar control 
+                    and close observation.These patients are at a high risk of disease progression and 
+                    permanent vision loss, and they are most likely experiencing neuropathy elsewhere at 
+                    this point.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="https://core4-cms.imgix.net/1559832573-0619_CF1_Fig3.png" alt="" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    STAGE 4: PROLIFERATIVE DIABETIC RETINOPATHY
+                </h1>
+                <p>These patients had NPDR that has progressed to PDR, and they exhibit either 
+                    neovascularization of the disc/elsewhere or vitreous/preretinal hemorrhage.</p>
+                <p>These patients require immediate referral to a retina specialist for further 
+                    testing and treatment. Peripheral neovascularization is usually treated with 
+                    laser panretinal photocoagulation. They also often receive anti-VEGF intravitreal 
+                    injections that may be performed in conjunction with PRP.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="https://core4-cms.imgix.net/1559832596-0619_CF1_Fig4.png" alt="" />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerlinks">
+                <a href="/home">Home</a>
+                <a href="/info" class="mainLink">Info</a>
+                <a href="/about">About Us</a>
+                <a href="/conduct">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
